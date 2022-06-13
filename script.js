@@ -101,3 +101,13 @@ const inputDecimal = (dot) => {
   }
   currentNumber += dot;
 };
+
+// Kalkulasi persentase
+const percent = document.querySelector(".percentage");
+
+percent.addEventListener("click", () => {
+  // console.log("percentage button is pressed");
+  currentNumber /= 100;
+  updateScreen(currentNumber);
+});
+
